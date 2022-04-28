@@ -56,3 +56,63 @@ nav ul li a
     text-decoration: none;
     font-size: 12px;
 }
+
+
+nav ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after
+{
+    width: 100%;
+}
+
+.texto
+{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.texto h1
+{
+    font-size: 60px;
+}
+
+.texto p
+{
+    margin: 20px 0 50px;
+    font-size: 14px;
+}
+
+.texto a 
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.texto .boton
+{
+    border: 2px solid;
+    padding: 10px 34px;
+    background: transparent;
+    position: relative;
+}
+
+.boton:hover
+{
+    background: orange;
+    transition: 1s;
+}
